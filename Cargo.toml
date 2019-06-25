@@ -1,0 +1,10 @@
+[package]
+name = "div"
+version = "0.1.0"
+authors = ["iospace <whsitchy@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.17"
+serde_json = "1.0.39"
+serde_derive = "1.0.91"

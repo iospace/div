@@ -17,7 +17,7 @@ fn division_processing(division: &Value) -> Result<(), Error> {
     let div_json:Map<String, Value> = reqwest::get(&div_url)?.json()?;
 
     /* Display the division name */
-    println!("{}", div_json["divisions"][0]["nameShort"].as_str().unwrap());
+    println!("[b]{}[/b]", div_json["divisions"][0]["nameShort"].as_str().unwrap());
 
     /* Get the teams */
     let teams = division["teamRecords"].as_array().unwrap();
